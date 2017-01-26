@@ -1,17 +1,54 @@
 import React from 'react';
 import { storiesOf, action, linkTo } from '@kadira/storybook';
-import Button from './Button';
-import Welcome from './Welcome';
+import Talks from './Talks';
 
-storiesOf('Welcome', module)
-  .add('to Storybook', () => (
-    <Welcome showApp={linkTo('Button')}/>
-  ));
+storiesOf('2017/01/28 Hachioji.pm', module)
 
-storiesOf('Button', module)
-  .add('with text', () => (
-    <Button onClick={action('clicked')}>Hello Button</Button>
+  .add('フロントエンドはじめました', () => (
+    <Talks.First />
   ))
-  .add('with some emoji', () => (
-    <Button onClick={action('clicked')}>😀 😎 👍 💯</Button>
-  ));
+
+  .add('About me', () => (
+    <Talks.Second />
+  ))
+
+  .add('近況', () => (
+    <Talks.Third />
+  ))
+
+  .add('話すこと', () => (
+    <Talks.Fourth />
+  ))
+
+  .add('登場人物', () => (
+    <Talks.Fifth />
+  ))
+
+  .add('やりたいこと', () => (
+    <Talks.Sixth />
+  ))
+
+  .add('試してみた', () => (
+    <Talks.Seventh />
+  ))
+
+  .add('起きた変化', () => (
+    <Talks.Eighth />
+  ))
+
+  .add('結論', () => (
+    <Talks.Ninth />
+  ))
+
+  .add('...', () => (
+    <Talks.Tenth />
+  ))
+
+  .add('おしまい', () => (
+    <Talks.Eleventh />
+  ))
+
+
+
+
+
