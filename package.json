@@ -7,8 +7,11 @@
     "@kadira/storybook": "^2.21.0"
   },
   "dependencies": {
+    "@kadira/storybook-addon-knobs": "^1.7.1",
+    "aphrodite": "^1.2.0",
     "react": "^15.4.2",
-    "react-dom": "^15.4.2"
+    "react-dom": "^15.4.2",
+    "react-paginators": "^0.1.4"
   },
   "scripts": {
     "start": "react-scripts start",
