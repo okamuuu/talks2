@@ -18,6 +18,7 @@ class Bootstrap3ishPaginatorStory extends Component {
   render() {
     return (
       <div style={{padding: "30px"}}>
+        <p><a target="_blank" href="https://www.npmjs.com/package/react-paginators">https://www.npmjs.com/package/react-paginators</a></p>
         <Bootstrap3ishPaginator
           current={number('current', this.state.current)}
           last={number('last', 20)}
@@ -63,7 +64,7 @@ export default () =>
         <Ul>
           <li>HTMLコーダーをフロントエンドエンジニアにジョブチェンジは厳しかった(Hachiojipm#63)</li>
           <li>なんだけど storybook に web components を追加する事だけお願いすると割とうまくいった</li>
-          <li><a href="" target="_blank">http://qiita.com/okamuuu/items/cc9b86fbac20da27bcee</a></li>
+          <li><a href="http://qiita.com/okamuuu/items/cc9b86fbac20da27bcee" target="_blank">http://qiita.com/okamuuu/items/cc9b86fbac20da27bcee</a></li>
           <li>局所的な作業、コーディングとインタラクティブなモーション追加は任せることは可能だと思う</li>
           <li>全体の設計はこららでハンドリングが必要。callback を渡す処理など</li>
           <li>残りの作業をサーバーサイドで巻き取れば行ける気がする</li>
@@ -77,7 +78,7 @@ export default () =>
           <li>フロントエンドエンジニアはレアキャラだけどサーバーサイドエンジニアはそこらへんにいる</li>
           <li>サーバーサイドエンジニアのみなさん。勇気をだして React.js を始めましょう</li>
           <li>redux を使わなくてもある程度は SPA できる</li>
-          <li><a href="" target="_blank">http://qiita.com/okamuuu/items/1b94ab69d1bc3fb82d27</a></li>
+          <li><a href="http://qiita.com/okamuuu/items/1b94ab69d1bc3fb82d27" target="_blank">http://qiita.com/okamuuu/items/1b94ab69d1bc3fb82d27</a></li>
         </Ul>
       </Panel>
     ))
@@ -90,6 +91,9 @@ export default () =>
           <li>React.js, Angular.js, Vue.js のどれを選択しても良いと思いますが分業するポイントの設定が大事</li>
         </Ul>
       </Panel>
+    ))
+    .add('おしまい', () => (
+      <Title>ご静聴ありがとうございました</Title>
     ))
     .add('付録: react-paginarots', () => (
       <Bootstrap3ishPaginatorStory />
